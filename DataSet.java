@@ -254,9 +254,9 @@ public class DataSet {
 	double X[]=x.getX();
 	double Y[]=y.getX();
 	double square= 0;
-	for(int i=0; i<X.length; i++)
+	for(int i=0; (i<X.length); i++)
 	{
-		square= Math.pow((X[i]-Y[i]),2);
+		square+= Math.pow((X[i]-Y[i]),2.0);
 	}
 	return Math.sqrt(square);
   }
