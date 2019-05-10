@@ -14,7 +14,7 @@ public class kNNMain{
 	String PATH_TO_DATA = args[0];
 	
 	List<DataPoint> fullDataSet =  DataSet.readDataSet(PATH_TO_DATA);
-	
+	KNNClassifier john = new KNNClassifier(9);
 	DataPoint datachosen = fullDataSet.get(49);
 	DataPoint chosendata = fullDataSet.get(50);
 	for( int i=0; i<datachosen.x.length; i++)
@@ -37,11 +37,25 @@ public class kNNMain{
     // TASK 5: Use the KNNClassifier class to determine the k nearest neighbors to a given DataPoint,
     // and make a print a predicted target label
 
+	System.out.println(john.predict(fullDataSet, datachosen));
 	
 
     // TASK 6: loop over the datapoints in the held out test set, and make predictions for Each
     // point based on nearest neighbors in training set. Calculate accuracy of model.
-
+	int crap=0;
+	for(int i=0; i<(fullDataSet.size()); i++)
+	{
+		DataPoint bob = fullDataSet.get(i);
+		String rob = john.predict(fullDataSet, bob);
+		if (rob.equals(bob.label))
+		{
+			crap++;
+		}
+	}
+	System.out.println((((double)crap/(double)(fullDataSet.size()))*100.0)+ "%");
+			
+		
+		
 
   }
 
