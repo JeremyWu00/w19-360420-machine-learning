@@ -3,7 +3,7 @@
 ## Jeremy Wu and Stephanie Spina
 
 ## Distributions of Model Accuracy
-Every time that the classification model is run, there's a different accuracy because in DataSet.java, specifically on the lines 148-150, there's a method used from Collections class that implements the shuffle method. The shuffle method serves to randomize the data. Consequently, the full data set used is no longer exactly the same and the exact accuracy that is printed will most likely not be the same as it was previously, unless the shuffled data is shuffled exactly the same way.
+Every time that the classification model is run, there's a different accuracy because in DataSet.java, specifically on the lines 148-150,a shuffle method is implemented from the Collections class. The shuffle method serves to randomize the data. Consequently, the full data set used is no longer exactly the same and the exact accuracy that is printed will most likely not be the same as it was previously, unless the shuffled data is shuffled exactly the same way.
 
 A sensible baseline against which we should compare our model's performance is .......(to finish)
 
