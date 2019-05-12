@@ -25,8 +25,8 @@ public class kNNMain{
 	
 	
     //TASK 2:Use the DataSet class to split the fullDataSet into Training and Held Out Test Dataset
-	List<DataPoint> TestSet = DataSet.getTestSet(fullDataSet, 0.2);
-	List<DataPoint> TrainingSet= DataSet.getTrainingSet(fullDataSet, 0.8);
+	List<DataPoint> TestSet = DataSet.getTestSet(fullDataSet, 0.3);
+	List<DataPoint> TrainingSet= DataSet.getTrainingSet(fullDataSet, 0.7 );
 
 
     // TASK 4: write a new method in DataSet.java which takes as arguments to DataPoint objects,
@@ -43,16 +43,16 @@ public class kNNMain{
     // TASK 6: loop over the datapoints in the held out test set, and make predictions for Each
     // point based on nearest neighbors in training set. Calculate accuracy of model.
 	int don=0;
-	for(int i=0; i<(fullDataSet.size()); i++)
+	for(int i=0; i<(TestSet.size()); i++)
 	{
-		DataPoint bob = fullDataSet.get(i);
-		String rob = john.predict(fullDataSet, bob);
+		DataPoint bob = TestSet.get(i);
+		String rob = john.predict(TestSet, bob);
 		if (rob.equals(bob.label))
 		{
 			don++;
 		}
 	}
-	System.out.println((((double)don/(double)(fullDataSet.size()))*100.0)+ "%");
+	System.out.println((((double)don/(double)(TestSet.size()))*100.0)+ "%");;
 			
 		
 		
