@@ -42,18 +42,25 @@ public class kNNMain{
 
     // TASK 6: loop over the datapoints in the held out test set, and make predictions for Each
     // point based on nearest neighbors in training set. Calculate accuracy of model.
-	int don=0;
-	for(int i=0; i<(TestSet.size()); i++)
-	{
-		DataPoint bob = TestSet.get(i);
-		String rob = john.predict(TestSet, bob);
-		if (rob.equals(bob.label))
+	double steve[]= new double[1000];
+	for (int k=0; k<1000; k++)
+	{	
+		
+		int don=0;
+		for(int i=0; i<(TestSet.size()); i++)
 		{
-			don++;
+			DataPoint bob = TestSet.get(i);
+			String rob = john.predict(TestSet, bob);
+			if (rob.equals(bob.label))
+			{
+				don++;
+			}
 		}
+		steve[k]=(((double)don/(double)(TestSet.size()))*100.0);
+		//System.out.println(steve[k]+ "%");
 	}
-	System.out.println((((double)don/(double)(TestSet.size()))*100.0)+ "%");;
-			
+	System.out.println("the mean is "+ mean(steve));
+	System.out.println("the standard deviation is  is "+ standardDeviation(steve));
 		
 		
 
