@@ -5,6 +5,8 @@
 ## Distributions of Model Accuracy
 Every time that the classification model is run, there's a different accuracy because in DataSet.java, specifically on the lines 148-150,a shuffle method is implemented from the Collections class. The shuffle method serves to randomize the data. Consequently, the full data set used is no longer exactly the same and the exact accuracy that is printed will most likely not be the same as it was previously, unless the shuffled data is shuffled exactly the same way.
 
+After classification is run on a 1000 different test sets, the mean obtained is an accuracy of 96.50000000000064% and the standard deviation is 0.9795062462819686.
+
 A sensible baseline against which we should compare our model's performance is 65% or greater. When using the printLabelFrequencies method there are 444 patients who have a benign tumour and there are 237 patients who have a malignant tumour. 
 
 ## Analysis of different error types
