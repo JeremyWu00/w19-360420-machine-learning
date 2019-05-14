@@ -10,9 +10,11 @@ A sensible baseline against which we should compare our model's performance is 6
 ## Analysis of different error types
 In the context of medical diagnosis, a false positive occurs when a patient is diagnosed to have an illness; however they are healthy. It incorrectly attributes a disease to a healthy patient. A false negative occurs when a patient diagnosed as healthy; however they have an illness. It incorrectly indicates that the patient is healthy when they are not.
 
-Recall is the fraction that represents the ability of the model to select relevant items in the breast cancer dataset. Recall is also known as sensitivity and it indicates how many patients are diagnosed with an illness and are truly ill (true positives) out of those that are diagnosed as ill but are healthy (false positives) and those that are diagnosed as ill and are truly ill (true positives). In other words, it is calculated by dividing the number of true positives by the number of true positives and false positives.
+Recall is the fraction that represents the ability of the model to select relevant items in the breast cancer dataset. Recall is also known as sensitivity and it indicates how many patients are diagnosed with an illness and are truly ill (true positives) out of those that are diagnosed as healthy but are ill (false negative) and those that are diagnosed as ill and are truly ill (true positives). In other words, it is calculated by dividing the number of true positives by the number of true positives and false negatives.
 
-Precision is a value that represents the ability of the model to 
+Precision is the fraction of relevant items among the retrieved items in the breast cancer dataset. Precision indicates how many patients are diagnosed with an illness and are truly ill (true positives) out of those that are diagnosed with an illness and are truly ill (true positives) and are diagnosed as ill but are truly healthy (false positive).In other words, it is calculated by dividing the number of true positives by the number of true positives and false positives.
+
+
 A sensibles baseline for precision value is 
 A sensible baseline for the recall value is ....
 The precision and recall values change as the hyperparameter k chnages because....
