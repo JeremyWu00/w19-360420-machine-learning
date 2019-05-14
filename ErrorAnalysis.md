@@ -18,6 +18,6 @@ A sensible baseline for Precision value is 0.9660243245991287, which is the mean
 A sensible baseline for the Recall value is 0.933707657120366, which is the mean recall value.
 The standard deviation for precision is 3.3371688343806284E-4.
 The standard deviation for recall is 5.240765936470037E-4.
-As the hyperparameter k increases, the precision value... and the recall value...
-As the hyperparameter k decreases, the precision value... and the recall value...
+As the hyperparameter k increases, the precision value increases and the recall value decreases.
+As the hyperparameter k decreases, the precision value decreases and the recall value increases.
 
