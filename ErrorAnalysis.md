@@ -16,6 +16,7 @@ Precision is the fraction that represents the relevant items among the retrieved
 
 The Recall and the Precision values differ since Recall is the measure  of the all the results that are correctly classified whereas Precision is a measure of the results which are relevant.
 
-A sensibles baseline for precision value is 
+A sensibles baseline for precision value is..... 
 A sensible baseline for the recall value is ....
-The precision and recall values change as the hyperparameter k changes because 
+The precision value increases and recall value decreases as the hyperparameter k changes.
+increase precision and recall decreases
