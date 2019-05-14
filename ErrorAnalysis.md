@@ -14,10 +14,10 @@ Recall is the fraction that represents the ability of the model to select releva
 
 Precision is the fraction that represents the relevant items among the retrieved items in the breast cancer dataset. Precision indicates how many patients are diagnosed with an illness and are truly ill (true positives) out of those that are diagnosed with an illness and are truly ill (true positives) and are diagnosed as ill but are truly healthy (false positive).In other words, it is calculated by dividing the number of true positives by the number of true positives and false positives.
 
-A sensibles baseline for Precision value is 0.964. 
-A sensible baseline for the Recall value is 0.931.
-The mean is ....
-The standard deviation...
+A sensible baseline for Precision value is 0.9660243245991287, which is the mean precision value.
+A sensible baseline for the Recall value is 0.933707657120366, which is the mean recall value.
+The standard deviation for precision is 3.3371688343806284E-4.
+The standard deviation for recall is 5.240765936470037E-4.
 As the hyperparameter k increases, the precision value... and the recall value...
 As the hyperparameter k decreases, the precision value... and the recall value...
 
